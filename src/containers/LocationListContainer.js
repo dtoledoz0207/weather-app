@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import LocationList from './../components/LocationList';
-import {setCity} from './../actions';
+import {setSelectedCity} from './../actions';
 
 
 
@@ -39,7 +39,7 @@ LocationListContainer.propTypes = {
 // PARA QUE EL COMPONENTE HAGA USO DEL store INCORPORANDO LA LIBRERIA react-redux
 const mapDispatchToProps = dispatch => (
     {
-        dispatchSetCity: payload => dispatch(setCity(payload))
+        dispatchSetCity: payload => dispatch(setSelectedCity(payload))
     }
 );
 
